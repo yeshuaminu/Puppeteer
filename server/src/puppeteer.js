@@ -8,8 +8,7 @@ const testCreateUserButton = async () => {
   const page = await browser.newPage();
 
   // Step 3 - Using the page variable goto the correct URL that the React app is running on
-  await page.goto('http://probable-space-sniffle-69rg4p4457qpf4654-3000.app.github.dev/');
-  //await page.goto('http://localhost:3000');
+  await page.goto('http://localhost:3000');
   // Step 4 - Using the page variable, use the click method by passing the ".create-user" class name
   const searchResultSelector = '.create-user';
   await page.waitForSelector(searchResultSelector);
